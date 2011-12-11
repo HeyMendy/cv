@@ -1,0 +1,156 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Mendy}
+\familyname{Meng}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{2/2A Barker St, Kingsford}{NSW 2032}    % optional, remove the line if not wanted
+\mobile{0451669398}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{m@heymendy.com}                      % optional, remove the line if not wanted
+%\homepage{heymendy.com}                % optional, remove the line if not wanted
+\extrainfo{Blogger t.heymendy.com} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+%y{Computer Engineer}{Web Developer}{Software Programmer}  % arguments 3 to 6 can be left empty
+
+\section{OBJECTIVE}
+%\cventry{Computer Engineer}{Web Developer}{Software Programmer}{dd}{a}{b}  % arguments 3 to 6 can be left empty
+\cvlistitem{Computer Engineer}
+\cvlistitem{Web Developer}
+\cvlistitem{Software Programmer} 
+
+\section{PERSONAL SUMMARY}
+\cvlistitem{Excellent communication and interpersonal skill with the ability to relate effectively and professionally to people at all levels.}
+\cvlistitem{Proactive team player, with a "can do" attitude to all projects.}
+\cvlistitem{Highly motivated with a good attitude to learn new skills and gain career related experience.}            % optional other symbol
+\cvlistitem{Proven ability to multitask, a high attention to detail and in pursuit of perfection.} 
+%\cvlistitem{Item 3} 
+
+\section{EDUCATION}
+\cventry{2010--present}{Master}{Information Technology}{University of New South Wales}{\textit{Sydney, AU}}{High Distinction Average}  % arguments 3 to 6 can be left empty
+\cventry{2006--2010}{Bachelor}{Computer Science}{\textit{Qingdao University of Science and Technolgy China}}{University Houors with GPA 3.5}{d}
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+\section{SKILLS}
+\cvlistdoubleitem{Wb development based on LAMP}{Data Mining, Business Data Analysis}
+\cvlistdoubleitem{Python development}{Linux shell}
+\cvlistdoubleitem{CGI, Perl programming}{C++/Java programming}
+\cvlistdoubleitem{Web page UI design(HTML/JS/CSS)}{Photoshop/Illustrator graphic design}
+
+\section{EXPERIENCE}
+\subsection{Vocational}
+\cventry{2011}{GNOME Outreach Program Internship}{GNOME}{}{}{Works on an todo manager for GNOME desktop environment called Getting Things GNOME!\newline{}}
+\cventry{2010--2011}{Developer}{Automotive Research Company}{}{}{Developing Online CRM and Data Analysis Report System, providing Electronic Direct Marketing for car dealers.\newline{}}
+\cventry{2008--2010}{Web Developer}{Qingdao University of Science and Technology}{China}{}{I was in charge of some schools' website development and maintainance, developing OA softwaes and managing servers.\newline{}}
+\subsection{Miscellaneous}
+\cventry{2008--2010}{Teaching Assistant}{Qingdao University of Science and Technology}{China}{}{Tutoring a wide variety of undergraduate math courses.}
+
+\section{HONOURS AND ACHIEVEMENTS}
+\cvlistitem{Obtained 7 of 8 Programming Units, with Distincion+, UNSW, 2010-2011}
+\cvlistitem{Ranked in the top 3\% of the faculty by overall GPA, Awarded University Honors, QUST, 2010}
+\cvlistitem{CIST Performance Award, 1st place, QUST, 2009}            % optional other symbol
+\cvlistitem{CIST Innovation Award, QUST, 2008}
+\cvlistitem{CIST Performance Award, 1st place, QUST, 2007}
+
+\section{COURSES AND PROJECTS}
+\cvlistitem{Information Retrieval and Web Search, 2011. \newline{} This course introduce theories and methods of information retrieval, and practical issues regarding search engines.\newline{}}
+\cvlistitem{A Similar document retrieval engine based on Lucene, 2011. \newline{} Use Apache Lucene to build a search engine based on signatures for large document collections. Implement both the original Winnowing algorithm and the frequency- based Winnowing algorithm on top of Lucene.\newline{}}
+\cvlistitem{Online Food Ordering System, 2011. \newline{} An e-shopping system, which consist of an on-line food shop and a banking system, including design of a web server for restaurant and another independent program implement the banking system for verifying the user credit card information.\newline{}}
+\cvlistitem{Database Systems Implementation, 2011.\newline{}This course taught issues in the design and implementation of DBMSS. \newline{}}
+\cvlistitem{PostgreSQL implementation, 2011.\newline{}Modify the PostgreSQL buffer pool manager to use multiple buffer pools, implement a new data type for PostgreSQL, comparison operators and build indexes on values of the type.\newline{}}
+\cvlistitem{Software Construction, 2010.\newline{}Distinction, Software system decomposition and design, include shell, perl , python, cgi programming\newline{}}
+\cvlistitem{Data Warehousing and Data Mining, 2010.\newline{}Distinction, Implementing data warehouses, data extraction, cleaning, transformation and OLAP query processing, including practical work of Mining Techniques, mining multimedia database, web mining\newline{}}
+\cvlistitem{Online Chatting System, 2009\newline{}}
+\cvlistitem{CTO of Print Bar Online E-commerce System, 2009.\newline{}}
+\cvlistitem{Security File-Sharing System, 2008\newline{}}
+
+
+%\section{Languages}
+%\cvlanguage{Language 1}{Skill level}{Comment}
+%\cvlanguage{Language 2}{Skill level}{Comment}
+%\cvlanguage{Language 3}{Skill level}{Comment}
+
+%\section{Computer skills}
+
+%\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{INTERESTS}
+\cvlistdoubleitem[-]{Gym}{Swimming}
+\cvlistdoubleitem[-]{Reading}{Hiking}
+\cvlistdoubleitem[-]{Playing Pool}{}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5 \cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
